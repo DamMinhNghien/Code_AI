@@ -128,12 +128,10 @@ def nhap_canh():
 
 newDoThi = doThi()
 
-# Nhập và thêm các node
 node_input = nhap_node()
 for node in node_input:
     newDoThi.add_node(node[0].upper(), int(node[1]))
 
-# Nhập và thêm các cạnh
 edge_input = nhap_canh()
 for edge in edge_input:
     newDoThi.add_canh(edge[0].upper(), edge[1].upper(), int(edge[2]))
